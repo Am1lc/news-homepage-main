@@ -1,6 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
 :root {
     --Soft-orange: 	#e9ab53;
     --Soft-red: 	#f15e50;
@@ -25,33 +44,79 @@ body {
     place-items: center;
 }
 
-.card-content {
-    width: 310px;
-    height: 310px;
-    border: 5px solid #212226;
+.grid-container {
+    display: grid;
+    gap: 2px 2px;
+    padding: px;
   }
 
-.card-content {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    grid-template-areas:
-      "sec1-alias sec1-alias sec3-alias"
-      "sec2-alias    .      sec3-alias"
-      "   .         .      sec3-alias";
-  }
+.section {
+    gap: 100%;
+}
+
+.header {
+    background-color: #c1bec5;
+}
   
-.sec-1 {
+.sec1 {
     grid-area: sec1-alias;
     background-color: #3A8C7D;
 }
 
-.sec-2 {
+.sec2 {
     grid-area: sec2-alias;
-    background-color: #255954;
+    background-color: #133431;
 }
 
-.sec-3 {
+.sec3 {
+    grid-area: sec3-alias;
+    background-color: #1c6e40;
+}
+
+.sec4 {
+    grid-area: sec3-alias;
+    background-color: #527f66;
+}
+
+.sec5 {
     grid-area: sec3-alias;
     background-color: #71D99E;
 }
 
+/* components */
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+     'one'
+     'two'
+     'three'
+     'four'
+     'five'
+     'six';
+  
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+
+
+.section:nth-child(1) {
+    grid-area: one;
+}
+.section:nth-child(2) {
+    grid-area: two;
+}
+.section:nth-child(3) {
+    grid-area: three;
+}
+.section:nth-child(4) {
+    grid-area: four;
+}
+.section:nth-child(5) {
+    grid-area: five;
+}
+.section:nth-child(6) {
+    grid-area: six;
+}
