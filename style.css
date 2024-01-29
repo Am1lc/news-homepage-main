@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Soft-orange: 	#e9ab53;
+    --Soft-red: 	#f15e50;
+    --Off-white: 	#fffdfa;
+    --Grayish-blue: #c5c6ce;
+    --Darkgrayishblue: 	#5d5f79;
+    --Verydarkblue: 	#00001a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+};
+
+.main {
+    display: grid;
+    place-items: center;
+}
+
+.card-content {
+    width: 310px;
+    height: 310px;
+    border: 5px solid #212226;
+  }
+
+.card-content {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+      "sec1-alias sec1-alias sec3-alias"
+      "sec2-alias    .      sec3-alias"
+      "   .         .      sec3-alias";
+  }
+  
+.sec-1 {
+    grid-area: sec1-alias;
+    background-color: #3A8C7D;
+}
+
+.sec-2 {
+    grid-area: sec2-alias;
+    background-color: #255954;
+}
+
+.sec-3 {
+    grid-area: sec3-alias;
+    background-color: #71D99E;
+}
+
