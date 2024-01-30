@@ -199,6 +199,11 @@ nav li:first-child {
     display: none;
 }
 
+#x-menu {
+    display: flex;
+    justify-content: right;
+}
+
 @media (max-width: 800px) {
     .hideOnMobile {
         display: none;
