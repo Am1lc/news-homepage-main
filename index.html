@@ -11,13 +11,18 @@
 <body>
 
   <main class="grid-container">
-    <div class="card section">
+    
+    <div class="card-section">
+      
       <div class="header section">
-          <p>Home</p>
-          <p>New</p>
-          <p>Popular</p>
-          <p>Trending</p>
-          <p>Categories</p>
+        <img id="items" src="assets/images/icon-menu.svg" alt="menu" onclick="clickMenu()">
+          <header id="menu">
+            <p>Home</p>
+            <p>New</p>
+            <p>Popular</p>
+            <p>Trending</p>
+            <p>Categories</p>
+          </header>
       </div>
 
       <div class="sec1 section">
@@ -57,5 +62,14 @@
     </div>
 
   </main>
+  <script>
+    function clickMenu() {
+      if (menu.style.display == 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>

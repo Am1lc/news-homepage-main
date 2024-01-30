@@ -84,9 +84,8 @@ body {
 }
 
 /* components */
-.grid-container {
+.card-section {
     display: grid;
-    gap: 1.5rem;
     grid-auto-columns: 1fr;
     grid-template-areas:
      'one'
@@ -97,6 +96,7 @@ body {
      'six';
   
     padding-block: 2rem;
+    gap: 1.5rem;
     width: min(95%, 70rem);
     margin-inline: auto;
   }
@@ -119,4 +119,12 @@ body {
 }
 .section:nth-child(6) {
     grid-area: six;
+}
+
+#menu {
+    display: none;
+}
+
+#items {
+    cursor: pointer;
 }
