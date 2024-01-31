@@ -48,6 +48,9 @@ body {
   font-variation-settings:
     "slnt" 0;
     background-color: var(--Off-white);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
 };
 
 .main {
@@ -93,6 +96,11 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    color: var(--Off-white);
+    background-color: var(--Verydarkblue);
+}
+
 .sec4 {
     grid-area: sec3-alias;
     background-color: var(--Verydarkblue);
@@ -117,6 +125,11 @@ button {
 .section-border > h1 {
     color: var(--Soft-orange);
     font-size: 2rem;
+}
+
+.section-border > h3:hover {
+    color:  var(--Soft-orange);
+    cursor: pointer;
 }
 
 .section-border > p {
@@ -176,6 +189,12 @@ button {
     font-weight: 800;
     line-height: 2.4em;
 }
+
+.title:hover {
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
 .content p {
     color: var(--Darkgrayishblue);
     line-height: 1.8em !important;
@@ -262,7 +281,7 @@ nav a{
 }
 
 nav a:hover {
-    background-color: grey;
+    color: var(--Soft-red);
 }
 
 nav li:first-child {
@@ -297,6 +316,10 @@ nav li:first-child {
 }
 
 .menu-button {
+    display: block;
+}
+
+.hideOnMobile {
     display: none;
 }
 
@@ -307,11 +330,51 @@ nav li:first-child {
     margin-top: 32px;
 }
 
-@media (max-width: 800px) {
+.pic2 {
+    display: none;
+}
+
+@media (min-width: 735px) {
     .hideOnMobile {
-        display: none;
+        display: block;
     }
     .menu-button {
+        display: none;
+    }
+}
+
+@media (min-width: 950px) {
+    .computers-grid {
+        flex-direction: row;
+    }
+    .card-section {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+         'one one four'
+         'two three four'
+         'five five five';
+      }
+    .pic {
+        display: none;
+    }
+
+    .pic2 {
         display: block;
+        grid-area: one;
+        width: 100px;
+        height: 100px;
+    }
+    .sec2 {
+        grid-area: two;
+    }
+    .sec3 {
+        grid-area: three;
+    }
+    .sec4 {
+        grid-area: four;
+    }
+    .sec5 {
+        grid-area: five;
     }
 }
