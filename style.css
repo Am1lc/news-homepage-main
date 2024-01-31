@@ -15,9 +15,19 @@ input, button, textarea, select {
     font: inherit;
 }
 
-img, picture, video, canvas, svg {
+/*img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+}*/
+
+.svg {
+    display: block;
+    max-width: 100%;
+}
+
+.pic {
+    display: block;
+    max-width: 100%; 
 }
 
 :root {
@@ -123,8 +133,52 @@ button {
 
 .sec5 {
     grid-area: sec3-alias;
-    background-color: #71D99E;
 }
+
+.computers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.gadgets-1 {
+    display: flex;
+}
+
+.gadgets-2 {
+    display: flex;
+}
+
+.gadgets-3 {
+    display: flex;
+}
+
+.picture {
+    float: left !important;
+    width:  100px !important;
+    height: 130px !important;
+    object-fit: cover !important;
+}
+
+.content {
+    padding: 0px 15px;
+}
+
+.numbers {
+    color: var(--Grayish-blue);
+    font-size: 2rem;
+}
+
+.title {
+    color: var(--Verydarkblue);
+    font-weight: 800;
+    line-height: 2.4em;
+}
+.content p {
+    color: var(--Darkgrayishblue);
+    line-height: 1.8em !important;
+}
+
 
 /* components */
 .card-section {
@@ -215,13 +269,16 @@ nav li:first-child {
 
 .sidebar {
     position: fixed;
+    color: var(--Verydarkblue);
+    font-weight: 500;
+    font-size: 1.1rem;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background-color: var(--Off-white);
+    /*backdrop-filter: blur(10px);*/
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
