@@ -86,10 +86,11 @@ button {
     background-color: var(--Soft-red);
     border: none;
     text-decoration: none;
-    width: 180px;
+    width: 200px;
     height: 50px;
     letter-spacing: 5px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .sec4 {
@@ -129,6 +130,7 @@ button {
 
 .border {
     border-top: 0.5px solid var(--Darkgrayishblue);
+    padding-block-start: 2rem;
 }
 
 .sec5 {
