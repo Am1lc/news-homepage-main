@@ -306,9 +306,6 @@ button:hover {
 }
 
 @media (width >= 1200px) {
-    .sec1 .pic {
-        display: none;
-    }
 
     .grid-container {
         max-width: 100vw;
@@ -319,23 +316,13 @@ button:hover {
     }
 
     .first-box {
-        grid-column: span 2;
-        position: relative;
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60% 1fr;
         column-gap: 30px;
-        align-items: center;
     }
 
-    .sec1 .pic2 {
-        display: block;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        grid-column: span 2;
+    .text-body {
+        display: grid;
     }
-
     .sec2 {
         display: grid;
         grid-column: 1 / 2;
@@ -344,6 +331,7 @@ button:hover {
     .sec3 {
         display: grid;
         grid-column: 2 / 3;
+        margin-top: 20px
     }
     
 .section:nth-child(1) {
