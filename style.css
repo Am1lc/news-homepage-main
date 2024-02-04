@@ -62,6 +62,11 @@ html {
     padding: 0;
 }
 
+.row-container {
+  display:grid;
+  margin:0 auto;
+}
+
 .header {
     position: relative;
 }
@@ -314,6 +319,11 @@ button:hover {
         gap: 60px 0px;
         box-shadow: 1px 2px 5px 1px black;
     }
+
+    .row-container {
+        max-width:69.375rem;
+        grid-auto-flow: column;
+      }
 
     .first-box {
         grid-template-columns: 1fr 1fr;
