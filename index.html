@@ -12,7 +12,7 @@
 
   <main class="grid-container">
 
-    <nav class="header row-container">
+    <nav class="header container">
       <ul class="sidebar">
         <li id="x-menu" onclick="hideSidebar()"><a href="#"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg></a></li>
         <li><a href="#">Home</a></li>
@@ -35,16 +35,16 @@
     </nav>
  
     
-    <div class="card-section row-container">
+    <div class="card-section container">
 
       <div class="first-box section">
-        <picture class="hero-image">
+        <picture>
           <source media="(max-width: 959px)" srcset="./assets/images/image-web-3-mobile.jpg" max-width="343" max-height="300"/>
           <source media="(min-width: 960px)" srcset="./assets/images/image-web-3-desktop.jpg" max-width="730" max-height="300"/>
           <img src="./assets/images/image-web-3-desktop.jpg"  alt="W logo" max-width="730" max-height="300"/>
         </picture>
         
-          <div class="text-body main-article" >
+          <div class="future web" >
             <div class="sec2">
               <h2>The Bright Future of Web 3.0?</h2>
             </div>
@@ -120,16 +120,6 @@
     </div>
 
   </main>
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex';
-    }
-
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none';
-    }
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
