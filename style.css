@@ -337,6 +337,10 @@ button:hover {
     .future {
         display: grid;
     }
+
+    .article h1 {
+        font-size: 2.5rem;
+    }
     .sec2 {
         display: grid;
         grid-column: 1 / 2;
