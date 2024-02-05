@@ -293,13 +293,6 @@ button:hover {
     grid-area: three;
     color: var(--Verydarkblue);
 }
-.pic {
-    display: block;
-}
-
-.pic2 {
-    display: none;
-}
 
 @media (min-width: 735px) {
     .hideOnMobile {
@@ -319,6 +312,18 @@ button:hover {
         gap: 60px 0px;
         box-shadow: 1px 2px 5px 1px black;
     }
+
+    button {
+        align-self: last baseline;
+        margin:0;
+      }
+
+    .main-article {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+        margin-top:2.2rem;
+      }
 
     .row-container {
         max-width:69.375rem;
